@@ -619,6 +619,9 @@ a {
   white-space: nowrap;
 }
 
+.footer a:hover {
+  text-decoration: underline;
+}
 .footer .desc {
   white-space: normal;
 }
