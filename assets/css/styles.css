@@ -6,6 +6,10 @@
   --primary-color: #0f1b4c;
 }
 
+html,body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -50,17 +54,25 @@ a {
 }
 
 /* ================== Header ======================= */
-.header {
+.fixed-header {
   background: #e6f0ff;
-  height: 100vh;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+
+.hero-wrap {
+  background: #e6f0ff;
+  height: calc(100vh - 90px);
   position: relative;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px 0;
+  background-color: e6f0ff;
 }
 
 .navbar ul {
@@ -101,7 +113,7 @@ a {
 /* Hero */
 
 .hero {
-  margin-top: 130px;
+  padding-top: 130px;
 }
 
 .info {
@@ -617,6 +629,10 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   white-space: nowrap;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer .desc {
